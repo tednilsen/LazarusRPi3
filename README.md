@@ -12,6 +12,7 @@ built with:
 * FPC trunk.git 60773c21b99c3d8317c7698413713f1fa7b2551b
 * Incuding my own theme for Lazarus "TRN Wolf RPi"
 
+![Image](https://github.com/tednilsen/LazarusRPi3/raw/master/LazarusRPi3.png) 
 
 Requirements xz-utils
 

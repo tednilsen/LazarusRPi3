@@ -75,7 +75,7 @@ mkdir -p projects
 ```bash
 cd
 # if no folder named Desktop, create one
-mkdir Desktop
+mkdir -p Desktop
 cd Desktop
 cat <<EOF >Lazarus.desktop
 [Desktop Entry]

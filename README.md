@@ -21,7 +21,7 @@ sudo apt-get install xz-utils
 Either install by script:
 
 ```bash
-wget https://github.com/tednilsen/LazarusRPi3/install_all.sh
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/install_all.sh
 chmod +x install_all.sh
 ./install_all.sh
 ```
@@ -35,20 +35,20 @@ mkdir Development
 cd Development
 
 # download all the folders and files
-wget https://github.com/tednilsen/LazarusRPi3/config_lazarus.tar.xz
-wget https://github.com/tednilsen/LazarusRPi3/fpcbootstrap.tar.xz
-wget https://github.com/tednilsen/LazarusRPi3/fpcpkgconfig.tar.xz
-wget https://github.com/tednilsen/LazarusRPi3/fpcupdeluxe.tar.xz
-wget https://github.com/tednilsen/LazarusRPi3/fpcupdeluxe.ini
-wget https://github.com/tednilsen/LazarusRPi3/fpc.tar.xz.partaa
-wget https://github.com/tednilsen/LazarusRPi3/fpc.tar.xz.partab
-wget https://github.com/tednilsen/LazarusRPi3/fpcsrc.tar.xz.partaa
-wget https://github.com/tednilsen/LazarusRPi3/fpcsrc.tar.xz.partab
-wget https://github.com/tednilsen/LazarusRPi3/lazarus.tar.xz.partaa
-wget https://github.com/tednilsen/LazarusRPi3/lazarus.tar.xz.partab
-wget https://github.com/tednilsen/LazarusRPi3/lazarus.tar.xz.partac
-wget https://github.com/tednilsen/LazarusRPi3/lazarus.tar.xz.partad
-wget https://github.com/tednilsen/LazarusRPi3/lazarus.tar.xz.partae
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/config_lazarus.tar.xz
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/fpcbootstrap.tar.xz
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/fpcpkgconfig.tar.xz
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/fpcupdeluxe.tar.xz
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/fpcupdeluxe.ini
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/fpc.tar.xz.partaa
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/fpc.tar.xz.partab
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/fpcsrc.tar.xz.partaa
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/fpcsrc.tar.xz.partab
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/lazarus.tar.xz.partaa
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/lazarus.tar.xz.partab
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/lazarus.tar.xz.partac
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/lazarus.tar.xz.partad
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/lazarus.tar.xz.partae
 
 # combine parts and delete leftover-parts
 cat fpc.tar.xz.part* > fpc.tar.xz
@@ -59,7 +59,7 @@ cat lazarus.tar.xz.part* > lazarus.tar.xz
 rm lazarus.tar.xz.part*
 
 # grab extra files if needed
-wget https://github.com/tednilsen/LazarusRPi3/compress_all.sh
+wget https://github.com/tednilsen/LazarusRPi3/blob/master/compress_all.sh
 chmod +x compress_all.sh
 
 # extract the folders

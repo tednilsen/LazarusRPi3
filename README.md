@@ -52,6 +52,10 @@ chmod +x compress_all.sh
 
 # extract the folders
 for f in *.tar.xz; do tar -xf "$f"; done
+
+# create folders
+mkdir -p tmp
+mkdir -p projects
 ```
 
 ...all files extracted, now create a desktop shortcut for Lazarus.

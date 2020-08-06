@@ -11,12 +11,24 @@ built with:
 * Lazarus trunk.git db5e3f4d05eb822df895ab1fe615760c1f6799a7
 * FPC trunk.git 60773c21b99c3d8317c7698413713f1fa7b2551b
 
-Extract files to /home/pi/Development
+Requirements xz-utils
 
 ```bash
 # install the xz if needed
 sudo apt-get install xz-utils
+```
 
+Either install by script:
+
+```bash
+wget https://github.com/tednilsen/LazarusRPi3/install_all.sh
+chmod +x install_all.sh
+./install_all.sh
+```
+
+or manually install here:
+
+```bash
 # create the installation folder
 cd
 mkdir Development

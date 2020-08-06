@@ -1,0 +1,64 @@
+# LazarusRPi3
+FPC and Lazarus binaries for RPi3
+
+built with:
+* FPCUPdeluxe V1.8.0e (fpcupdeluxe-arm-linux)
+* Raspberry Pi 3
+* Linux 5.4.51-v7+ armv7l
+* Raspbian GNU/Linux 10 (buster)
+* fpcopt="-dFPC_ARMHF -CpARMV7A -CfVFPV4 -OoFASTMATH -CaEABIHF -XX -Xs -CX -O2"
+* lazopt="-dFPC_ARMHF -CpARMV7A -CfVFPV4 -OoFASTMATH -CaEABIHF -XX -Xs -CX -O2"
+* Lazarus trunk.git db5e3f4d05eb822df895ab1fe615760c1f6799a7
+* FPC trunk.git 60773c21b99c3d8317c7698413713f1fa7b2551b
+
+Extract files to /home/pi/Development
+
+```bash
+# install the xz if needed
+sudo apt-get install xz-utils
+
+# create the installation folder
+cd
+mkdir Development
+cd Development
+
+# download all the folders and files
+wget https://github.com/tednilsen/LazarusRPi3/config_lazarus.tar.xz
+wget https://github.com/tednilsen/LazarusRPi3/fpc.tar.xz
+wget https://github.com/tednilsen/LazarusRPi3/fpcbootstrap.tar.xz
+wget https://github.com/tednilsen/LazarusRPi3/fpcpkgconfig.tar.xz
+wget https://github.com/tednilsen/LazarusRPi3/fpcsrc.tar.xz
+wget https://github.com/tednilsen/LazarusRPi3/fpcupdeluxe.tar.xz
+wget https://github.com/tednilsen/LazarusRPi3/lazarus.tar.xz
+wget https://github.com/tednilsen/LazarusRPi3/fpcupdeluxe.ini
+# grab extra files if needed
+wget https://github.com/tednilsen/LazarusRPi3/compress_all.sh
+chmod +x compress_all.sh
+
+# extract the folders
+for f in *.tar.xz; do tar -xf "$f"; done
+```
+
+...all files extracted, now create a desktop shortcut for Lazarus.
+```bash
+cd
+# if no folder named Desktop, create one
+mkdir Desktop
+cd Desktop
+cat <<EOF >Lazarus.desktop
+[Desktop Entry]
+Name=Lazarus
+Encoding=UTF-8
+Type=Application
+Terminal=false
+Icon=/home/pi/Development/lazarus/images/icons/lazarus.ico
+Exec=/home/pi/Development/lazarus/lazarus --pcp="/home/pi/Development/config_lazarus" %f
+GenericName=Lazarus IDE with Free Pascal Compiler
+Category=Application;IDE;Development;GUIDesigner;Programming;
+Categories=Application;IDE;Development;GUIDesigner;Programming;
+Keywords=editor;Pascal;IDE;FreePascal;fpc;Design;Designer;
+EOF
+chmod +x Lazarus.desktop
+```
+
+All done, Lazarus is installed with a desktop-shortcut ...enjoy FPC and Lazarus on RPi3!

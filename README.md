@@ -24,13 +24,28 @@ cd Development
 
 # download all the folders and files
 wget https://github.com/tednilsen/LazarusRPi3/config_lazarus.tar.xz
-wget https://github.com/tednilsen/LazarusRPi3/fpc.tar.xz
 wget https://github.com/tednilsen/LazarusRPi3/fpcbootstrap.tar.xz
 wget https://github.com/tednilsen/LazarusRPi3/fpcpkgconfig.tar.xz
-wget https://github.com/tednilsen/LazarusRPi3/fpcsrc.tar.xz
 wget https://github.com/tednilsen/LazarusRPi3/fpcupdeluxe.tar.xz
-wget https://github.com/tednilsen/LazarusRPi3/lazarus.tar.xz
 wget https://github.com/tednilsen/LazarusRPi3/fpcupdeluxe.ini
+wget https://github.com/tednilsen/LazarusRPi3/fpc.tar.xz.partaa
+wget https://github.com/tednilsen/LazarusRPi3/fpc.tar.xz.partab
+wget https://github.com/tednilsen/LazarusRPi3/fpcsrc.tar.xz.partaa
+wget https://github.com/tednilsen/LazarusRPi3/fpcsrc.tar.xz.partab
+wget https://github.com/tednilsen/LazarusRPi3/lazarus.tar.xz.partaa
+wget https://github.com/tednilsen/LazarusRPi3/lazarus.tar.xz.partab
+wget https://github.com/tednilsen/LazarusRPi3/lazarus.tar.xz.partac
+wget https://github.com/tednilsen/LazarusRPi3/lazarus.tar.xz.partad
+wget https://github.com/tednilsen/LazarusRPi3/lazarus.tar.xz.partae
+
+# combine parts and delete leftover-parts
+cat fpc.tar.xz.part* > fpc.tar.xz
+rm fpc.tar.xz.part*
+cat fpcsrc.tar.xz.part* > fpcsrc.tar.xz
+rm fpcsrc.tar.xz.part*
+cat lazarus.tar.xz.part* > lazarus.tar.xz
+rm lazarus.tar.xz.part*
+
 # grab extra files if needed
 wget https://github.com/tednilsen/LazarusRPi3/compress_all.sh
 chmod +x compress_all.sh

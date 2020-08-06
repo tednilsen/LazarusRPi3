@@ -10,7 +10,7 @@ built with:
 * lazopt="-dFPC_ARMHF -CpARMV7A -CfVFPV4 -OoFASTMATH -CaEABIHF -XX -Xs -CX -O2"
 * Lazarus trunk.git db5e3f4d05eb822df895ab1fe615760c1f6799a7
 * FPC trunk.git 60773c21b99c3d8317c7698413713f1fa7b2551b
-* Incuding my own theme for Lazarus "TRN WolfBlue RPi"
+* Incuding my own theme for Lazarus "TRN Wolf RPi"
 
 
 Requirements xz-utils

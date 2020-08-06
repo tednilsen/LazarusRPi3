@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install the xz if needed
-sudo apt-get install xz-utils
+# sudo apt-get install xz-utils
 
 # create the installation folder
 cd

@@ -37,6 +37,7 @@ wget https://github.com/tednilsen/LazarusRPi3/raw/master/compress_all.sh
 chmod +x compress_all.sh
 
 # extract the folders
+echo "Please hold on, extracting files..."
 for f in *.tar.xz; do tar -xf "$f"; done
 
 # create folders
